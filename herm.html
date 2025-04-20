@@ -2,23 +2,60 @@
 <html>
 
 <head>
-  <title>Proposal for Lights in the Forest</title>
+  <title>Herm Greider Portfolio</title>
   <link rel="stylesheet" href="./style.css">
 </head>
 
-<body>
-  <h2>Step up to the Portals.</h2>
-  <p>As you walk the nature path, soft chimes and flickering forest specters respond to your movements, creating a
-    surreal,
-    immersive experience. The Light Portals use repetition, sound, and subtle interactivity to make visitors feel
-    surrounded
-    by living light, blending the natural and the otherworldly to make the Portals feel malleable and alive.</p>
-  <img src="./images/Render_Hero.png">
-  <div class="flexRow">
-    <a href="./proposal.html">Proposal</a>
-    <a href="./proposal.html">Herm</a>
-    <a href="./proposal.html">Aaron</a>
+<body class="herm-portfolio">
+  <h2>Herm Greider Portfolio</h2>
+
+  <h4>Ceramic Lamp with Programmable LEDs</h4>
+  <p>
+    This piece was the result of a collaboration with ceramic artist <a href="http://rachel.greider.org">Rachel
+      Greider</a>.
+    Designed as an eye-catching centerpiece, the ceramic lamp casts vibrant shadows across the ceiling. It served as a
+    direct precursor to our <i>Light Portals</i> project—an essential prototype for exploring the mathematical
+    algorithms involved in arranging LEDs.</p>
+
+  <p>
+    The LED rig features a custom circuit board, programmed algorithms for a microcontroller, and a seamless integration
+    with the ceramic lamp form.
+  </p>
+  <div class="flex-container">
+    <video width="300" controls="controls" preload="metadata">
+      <source src="images/herm-lamp-insta.mov#t=0.1">
+    </video>
+    <video controls width="300" controls="controls" preload="metadata">
+      <source src="images/herm-lamp-prog1.mov#t=0.1">
+    </video>
+    <img src="images/herm-lamp-electronics.HEIC" style="width: 378px" />
   </div>
+
+  <h4>Homemade Music Synthesizer (in cardboard box)</h4>
+  <p>
+    As a longtime keyboard player and programmer, I was interested in combining the two worlds. This
+    prototype explores the potential of connecting a synthesizer with real time user interaction, through a DIY circuit board,
+    with keyboard input, and external sensors.
+  </p>
+  <p>
+    For this demo, instead of pre-programming a song, I've rigged it to take input from a Yamaha keyboard, paired with a simple
+    UI to tweak parameters like a traditional synth.
+  </p>
+  <p>
+    At the core of the project is the Daisy Seed, programmable audio hardware, designed for real time audio processing.
+    It makes it easy to incorporate external sensors—like proximity or touch inputs—for dynamic sound
+    modulation. It was also a fun excuse to revisit my soldering skills and build a custom circuit board to handle MIDI
+    input and signal processing.
+  </p>
+  <div class="flex-container">
+    <video width="600" controls="controls" preload="metadata">
+      <source src="images/herm-synth-sound.mov#t=0.1">
+    </video>
+    <img src="images/herm-synth-assembly.HEIC" style="width: 378px" />
+    <img src="images/herm-synth-keyboard.HEIC" style="width: 600px" />
+    <img src="images/herm-synth-ui.HEIC" style="width: 350px" />
+  </div>
+
 </body>
 
 </html>

@@ -8,7 +8,7 @@
   body {
     display: flex;
     flex-direction: column;
-    gap: 16px;
+    gap: 8px;
     align-items: flex-start;
     justify-content: center;
     color: lightgray;
@@ -21,4 +21,26 @@
 
   img {
     width: 100%;
+  }
+
+  .herm-portfolio {
+    max-width: 1100px;
+  }
+
+  .herm-portfolio h4 {
+    margin: 0;
+  }
+
+  .herm-portfolio p {
+    margin-top: 0px;
+    line-height: 1.25;
+    width: 700px;
+  }
+
+  .herm-portfolio img {
+    margin: 0 10px 10px 0;
+  }
+
+  .herm-portfolio video {
+    margin: 0 10px 10px 0;
   }
