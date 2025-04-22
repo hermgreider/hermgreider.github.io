@@ -83,6 +83,37 @@
     aspect-ratio: 1.75;
   }
 
+  .card {
+    display: flex;
+    gap: 13px;
+    margin-top: 75px;
+    /* flex-wrap: wrap; */
+  }
+
+  .card div {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    justify-content: center;
+  }
+
+  .card img {
+    object-fit: cover;
+    max-width: 150px;
+    aspect-ratio: 1;
+    max-height: 150px;
+    width: 100%;
+    flex-shrink: 2;
+  }
+
+  .card h2 {
+    margin: 0;
+  }
+
+  .card p {
+    max-width: 480px;
+  }
+
   @media only screen and (max-width: 600px) {
     .flex-container {
       flex-wrap: wrap;
@@ -94,5 +125,9 @@
 
     h1 {
       font-size: 8vw;
+    }
+
+    .card {
+      flex-wrap: wrap;
     }
   }
