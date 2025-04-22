@@ -88,6 +88,11 @@
     gap: 13px;
     margin-top: 75px;
     /* flex-wrap: wrap; */
+
+    background: #2b2b2b;
+    padding: 16px;
+    margin: 12px;
+    border-radius: 12px;
   }
 
   .card div {
@@ -121,6 +126,12 @@
 
     body {
       width: 100%;
+    }
+
+    body > p,
+    body > h1,
+    body > h2 {
+      margin: 0 12px;
     }
 
     h1 {
