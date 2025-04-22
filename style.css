@@ -30,7 +30,10 @@
 
   h1,
   h2,
-  p {
+  p,
+  img,
+  video,
+  iframe {
     margin: 0;
   }
 
@@ -61,20 +64,6 @@
   iframe {
     width: 100%;
     border-radius: 10px;
-  }
-
-  .herm-portfolio p {
-    margin-top: 0px;
-    line-height: 1.25;
-    width: 700px;
-  }
-
-  .herm-portfolio img {
-    margin: 0 10px 10px 0;
-  }
-
-  .herm-portfolio video {
-    margin: 0 10px 10px 0;
   }
 
   .flex-container {
