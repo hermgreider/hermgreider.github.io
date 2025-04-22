@@ -1,5 +1,5 @@
 window.onload = function () {
-    var elements = gsap.utils.toArray('img, iframe, h1, h2, h3, aside, p');
+    var elements = gsap.utils.toArray('img, video, iframe, h1, h2, h3, aside, p');
     elements.forEach((element) => {
         gsap.fromTo(element,
             { // start
