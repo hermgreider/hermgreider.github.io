@@ -1,4 +1,5 @@
 window.onload = function () {
+    imgFlex();
     var elements = gsap.utils.toArray('img, video, iframe, h1, h2, h3, aside, p');
     elements.forEach((element) => {
         gsap.fromTo(element,
@@ -21,4 +22,15 @@ window.onload = function () {
             }
         );
     })
+}
+
+
+function imgFlex() {
+    // get all all imgs inside all flex-two tags
+    // for each img, get aspect ratio // set its flex = img aspect ratio
+    let imgs = document.querySelectorAll(".flex-container > img, iframe");
+    for (let i = 0; i < imgs.length; i++) {
+        let ogHTML = imgs[i].outerHTML;
+        imgs[i].outerHTML = `<div class="jsAdjust" style="flex: ${imgs[i].naturalWidth / imgs[i].naturalHeight}">${ogHTML}</div>`;
+    }
 }

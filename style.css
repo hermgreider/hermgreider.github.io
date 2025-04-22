@@ -17,7 +17,9 @@
     line-height: 1.25;
     margin: 0;
     margin-bottom: 25svh;
-    max-width: 700px;
+    max-width: 95svw;
+    width: 700px;
+    overflow-x: hidden;
   }
 
   h1,
@@ -85,6 +87,7 @@
     flex-wrap: nowrap;
 
     width: 100%;
+    overflow: hidden;
   }
 
   iframe {
