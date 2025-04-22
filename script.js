@@ -1,5 +1,7 @@
 window.onload = function () {
-    imgFlex();
+    if (window.innerWidth > 600) { 
+        imgFlex(); 
+    }
     var elements = gsap.utils.toArray('img, video, iframe, h1, h2, h3, aside, p');
     elements.forEach((element) => {
         gsap.fromTo(element,
