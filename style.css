@@ -59,6 +59,22 @@
     font-weight: lighter;
   }
 
+  button {
+    background-color: #444;
+    border: none;
+    border-radius: 2px;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-right: 10px;
+  }
+
+  button a {
+    text-decoration: none;
+  }
+    
   img,
   video,
   iframe {
