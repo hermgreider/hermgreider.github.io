@@ -13,7 +13,7 @@
     justify-content: center;
     color: lightgray;
     background: black;
-    font-family: "helvetica", "Roboto", sans-serif;
+    font-family: "Raleway", sans-serif;
     line-height: 1.25;
     margin: 0;
     margin-bottom: 25svh;
@@ -38,8 +38,8 @@
   }
 
   h1 {
-    font-family: "Rubik 80s Fade", system-ui;
-    font-weight: 400;
+    font-family: "Raleway", sans-serif;
+    font-weight: 900;
     font-style: normal;
     font-size: 52px;
     font-weight: 900;
@@ -128,9 +128,9 @@
       width: 100%;
     }
 
-    body > p,
-    body > h1,
-    body > h2 {
+    body>p,
+    body>h1,
+    body>h2 {
       margin: 0 12px;
     }
 
