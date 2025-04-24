@@ -8,7 +8,7 @@
   body {
     display: flex;
     flex-direction: column;
-    gap: 13px;
+    gap: 22px;
     align-items: flex-start;
     justify-content: center;
     color: lightgray;
@@ -74,7 +74,7 @@
   button a {
     text-decoration: none;
   }
-    
+
   img,
   video,
   iframe {
