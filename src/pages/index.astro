@@ -1,0 +1,274 @@
+astro
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import "../styles/home.css";
+---
+
+<BaseLayout title="Greider Lightworks — Light Portals">
+
+  <section class="hero">
+    <video autoplay muted loop playsinline preload="metadata" class="hero-video">
+        <source src="video/hero.mp4" type="video/mp4" />
+    </video>
+
+    <div class="overlay">
+      <div class="top">
+        <h1 class="studio-name">Greider Lightworks</h1>
+      </div>
+
+      <div class="bottom">
+        <h1 class="project-title">Light Portals</h1>
+
+        <p class="project-question">
+          As you walk the nature path, soft chimes and flickering forest specters respond to your movements, 
+          creating a surreal, immersive experience. The Light Portals use repetition, sound, and subtle 
+          interactivity to make visitors feel surrounded by living light, blending the natural and the otherworldly 
+          to make the Portals feel malleable and alive. 
+        </p>
+
+      </div>
+    </div>
+
+    <div class="scroll-arrow" onclick="document.querySelector('.below-fold').scrollIntoView({ behavior: 'smooth' })">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" 
+      stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-down">
+        <line x1="12" y1="5" x2="12" y2="19"></line>
+        <polyline points="19 12 12 19 5 12"></polyline>
+      </svg>
+    </div>    
+  </section>
+
+<main class="below-fold">
+
+  <!-- Instagram reference -->
+  <section class="external-doc">
+    <img
+      src="images/cnc_install.jpg"
+      alt="Light Portals installation at Light in Forest"
+    />
+
+    <p class="caption">
+      <a
+        href="https://www.instagram.com/reel/DR4ysYQEY6K/"
+        target="_blank"
+        rel="noopener"
+        class="ig-link"
+      >
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M7 2C4.2 2 2 4.2 2 7v10c0 2.8 2.2 5 5 5h10c2.8 0 5-2.2 5-5V7c0-2.8-2.2-5-5-5H7zm10 2c1.7 0 3 1.3 3 3v10c0 1.7-1.3 3-3 3H7c-1.7 0-3-1.3-3-3V7c0-1.7 1.3-3 3-3h10zm-5 3.5A4.5 4.5 0 1 0 12 16a4.5 4.5 0 0 0 0-9zm0 2A2.5 2.5 0 1 1 9.5 12 2.5 2.5 0 0 1 12 9.5zm4.8-2.9a1.1 1.1 0 1 0 0 2.2 1.1 1.1 0 0 0 0-2.2z"/>
+        </svg>
+        See Light Portals at <em>Cincinnati Nature Center</em> through Dec 28
+      </a>
+    </p>
+  </section>
+
+  <p class="section-description">
+    Light Portals by Greider Lightworks is a father/son collaboration of Herm and Aaron Greider.
+  </p>
+
+  <section class="portfolio-row">
+    <a href="/portfolio-1" class="portfolio-card">
+      <img src="images/bio_aaron_crop.jpg" alt="Aaron Portfolio" />
+      <div class="card-content">
+          <h3>Aaron Greider</h3>
+          <p>Graphic Designer/Front-End Web Developer at Jungle Jim’s International Market. BS Communication Design 
+            from UC DAAP 2022. Cincinnati Nature Center Member and new volunteer (2025!). Eagle Scout and native plant 
+            enthusiast. Bane of honeysuckle.</p>
+      </div>
+    </a>
+
+    <a href="/portfolio-2" class="portfolio-card">
+      <img src="images/bio_herm_crop.jpg" alt="Herm Portfolio" />
+      <div class="card-content">
+          <h3>Herm Greider</h3>
+          <p>Retired Software Developer with 40 years experience leading, designing, and coding all types of 
+            software systems for defense and commercial applications. BS Computer Science, UC. MS CS Wright State. 
+            Currently prototyping next ideas for Light Portals.</p>
+      </div>
+    </a>
+  </section>
+
+  <!-- Project sections -->
+
+  <section class="project-detail">
+
+    <div class="project-text">
+      <h2>Animating Memories</h2>
+
+      <p>
+        Do artifacts from the past keep the memories of their users? Our Light Portals are built from 
+        reclaimed windows, letting the light of the past shine through and inviting visitors to imagine 
+        the homes and families who used these windows.
+      </p>
+
+      <p>
+        This collaborative project blends reclaimed windows and technology to create an engaging light and sound 
+        experience. Building on their shared interest for technology, environmental art, and interactive installations, 
+        Aaron and Herm invite audiences on a journey through light and sound.
+      </p>
+
+      <p>
+        Light Portals is installed at Cincinnati Nature Center for Light in the Forest through Dec 28.
+      </p>
+
+    </div>
+
+    <div class="project-media">
+      <img src="images/cnc_install.jpg" alt="CNC Installation" />
+    </div>
+
+  </section>
+
+  <section class="project-detail">
+
+    <div class="project-text">
+      <h2>How do they work?</h2>
+
+      <p>The installation is constructed of eight individual wooden frames from reclaimed windows, 
+        with programmable multicolor LED strips sealed between two panes and fully waterproofed. 
+      </p>
+      <p>  
+        Each LED responds to data from proximity sensors, changing hue, intensity, and pattern to bring 
+        the illuminated “forest specters” to life. 
+      </p>
+      <p>A programmable synthesizer creates voices and notes based on visitor movement, fading tracks 
+        in and out and shaping waveforms for a more immersive experience. Each portal contains its own
+        speaker to create an immersive sound experience.
+      </p>
+    </div>
+
+    <div class="project-video">
+      <video
+        src="video/cnc.mp4"
+        poster="images/cnc.jpg"
+        controls
+        preload="metadata"
+        playsinline
+      ></video>
+    </div>
+
+  </section>
+
+  <section class="project-detail">
+
+    <div class="project-text">
+      <h2>Windows and Frames</h2>
+
+      <p>
+        The reclaimed windows are from early to mid-century houses. Windows are mounted into simple 2x6 frames. 
+        We replaced glass where necessary and recaulked all the panes to avoid breakage.
+      </p>
+      <p> 
+        The LEDs are mounted into the windows on simple garden netting stapled to the 2x6 frame. We 
+        experimented with LED layouts in the windows based on the arrangement of the panes 
+        to create "spectors" in the windows animated with the LEDs.
+      </p>
+      <p>  
+        Weatherproofing was key to the design. We kept the frame build simple and then caulked all seams. 
+        The windows have remained watertight even in several inches of snow. This design has also proved
+        to be condensation-free.
+      </p>
+      <p>
+        To diffuse the LEDs, we used diffusion film squeegeed to each pane with some additional adhesive
+        to ensure the film did not peel or bubble.
+      </p>
+    </div>
+
+    <div class="project-media">
+      <img src="images/construction1.jpg" alt="Construction" />
+    </div>
+
+  </section>
+
+  <section class="project-detail">
+
+    <div class="project-text">
+      <h2>LEDs</h2>
+
+      <p>
+        Each Portal is illuminated by a two-meter Adafruit NeoPixel LED strip, encased in an IP67-rated silicone sleeve. 
+        Each strip contains 120 individually addressable RGB LEDs, allowing light to be precisely controlled at every point 
+        along its length.
+      </p>
+
+      <p>
+        The LED strips are suspended within the frame using garden netting, creating a flexible, non-rigid structure 
+        that diffuses the light and softens the geometry of the form.
+      </p>
+
+      <p>
+        The LEDs are programmed in MicroPython using a mathematically generated noise algorithm that animates across 
+        all 120 pixels. Environmental sensors continuously influence this animation. As visitors approach the Portals, 
+        the movement accelerates and the color palette shifts, causing the light to respond directly to human presence 
+        and proximity.
+      </p>
+    </div>
+
+    <div class="project-media">
+      <img src="images/leds_in_frame.jpg" alt="LEDs" />
+    </div>
+
+  </section>
+
+  <section class="project-detail">
+
+    <div class="project-text">
+      <h2>Microcontroller</h2>
+
+      <p>
+        Control is handled by a Pimoroni Plasma 2350 microcontroller. This board was selected for its ability 
+        to supply both 5V power for the LED strips and 3.3V power for sensors and control electronics, allowing 
+        the system to operate from a single controller without additional power regulation.
+      </p>
+      <p>
+        A distance sensor is connected to the Plasma 2350 via a serial interface. The measured distance value 
+        is used by the microcontroller to influence the LED animations and is also transmitted over a second 
+        serial connection to a Daisy Seed audio module. Both light and sound respond to the same proximity 
+        data, maintaining a direct relationship between visitor movement and system behavior.
+      </p>
+      <p>
+        Programming for the Plasma is in MicroPython. 
+      </p>
+    </div>
+
+    <div class="project-media">
+      <img src="images/board3.jpg" alt="Plasma" />
+    </div>
+
+  </section>
+
+    <section class="project-detail">
+
+    <div class="project-text">
+      <h2>Sensors</h2>
+
+      <p>
+        We use mmWave radar sensors to detect visitors. Ultrasonic sensors didn’t provide reliable readings 
+        for human distance, so we switched to mmWave, which delivers consistent and precise measurements 
+        up to five meters.
+      </p>
+
+      <p>
+        We mount each sensor along the side of the Portals, giving it a roughly 60-degree field of view to 
+        detect movement from both the front and back. As people move through the space, the sensors generate 
+        a wave of change that passes through the Portals, synchronizing their light and sound in real time.
+      </p>
+
+      <p>
+        Cabling posed a challenge, so we built custom four-foot, four-conductor wires that plug directly 
+        into the main board. These allow us to position the sensors cleanly along the Portal frames 
+        while keeping the electronics centralized.
+      </p>
+    </div>
+
+    <div class="project-media">
+      <img src="images/mmwave.jpg" alt="Sensor" />
+    </div>
+
+  </section>
+
+
+</main>
+
+</BaseLayout>
+
