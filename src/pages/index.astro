@@ -213,6 +213,36 @@ import "../styles/home.css";
   <section class="project-detail">
 
     <div class="project-text">
+      <h2>Sound</h2>
+
+      <p>
+        Each Portal generates sound using a Daisy Seed audio board. We built a dedicated sound engine for 
+        each Portal, giving every unit its own sonic character.
+      </p>
+      <p>
+        We developed several custom synthesizers in C++, including a bell-like resonant instrument, 
+        a traditional subtractive synthesizer with a Moog-style low-pass filter, and a percussive noise-based 
+        shaker. Each Portal runs a single sound engine, selected to shape its role within the larger installation. 
+        Configuration data and MIDI data live on an SD card, allowing the sound behavior to evolve over time.
+      </p>
+      <p>
+        Each Portal contains its own speaker, creating a field of independent sound sources. As visitors 
+        move through the space, each Portal responds to proximity by subtly shifting its sound. Because the 
+        sound engines are not synchronized, their relationships drift and phase naturally. The result is an 
+        immersive listening experience in which the sound changes continuously depending on position, 
+        movement, and duration of attention.
+      </p>
+    </div>
+    
+    <div class="project-media">
+      <img src="images/leds_in_frame.jpg" alt="LEDs" />
+    </div>
+
+  </section>
+
+  <section class="project-detail">
+
+    <div class="project-text">
       <h2>Microcontroller</h2>
 
       <p>
@@ -237,7 +267,7 @@ import "../styles/home.css";
 
   </section>
 
-    <section class="project-detail">
+  <section class="project-detail">
 
     <div class="project-text">
       <h2>Sensors</h2>
@@ -267,7 +297,31 @@ import "../styles/home.css";
 
   </section>
 
+  <section class="project-detail">
+    
+    <div class="project-text">
+      <h2>Collective Behavior</h2>
 
+      <p>
+        The Portals operate as an ecosystem of independent elements. Light, sound, and sensing are distributed 
+        across the installation rather than centralized, allowing each Portal to respond on its own while 
+        remaining connected to the larger field.
+      </p>
+    
+      <p>
+        As visitors move through the space, their proximity subtly alters color, motion, and sound. No two 
+        positions produce the same experience. Light patterns shift, sound sources drift and phase, and 
+        relationships between Portals change continuously as people pass through and linger.
+      </p>
+    
+      <p>
+        The installation does not present a fixed sequence or defined viewpoint. Instead, it unfolds through 
+        movement and attention, revealing itself differently with each encounter.
+      </p>
+    
+    </div>
+  </section>
+  
 </main>
 
 </BaseLayout>
