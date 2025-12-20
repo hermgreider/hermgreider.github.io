@@ -237,11 +237,6 @@ video {
   margin: 0 auto 3rem;
   letter-spacing: 0.5px;
   text-shadow: 0 2px 8px rgba(0,0,0,0.5);
-
-  /* animation setup */
-  opacity: 0;
-  transform: translateY(20px);
-  transition: opacity 0.8s ease, transform 0.8s ease;
 }
 
 /* Trigger fade-in */
@@ -333,16 +328,22 @@ video {
   color: rgba(255, 255, 255, 0.88);
 }
 
-.project-media {
+.project-media,
+.project-video {
   margin-top: 3rem;
+  border-radius: 6px;
+  overflow: hidden;
 }
 
 .project-media img,
-.project-media video {
+.project-video video {
   width: 100%;
   display: block;
   aspect-ratio: 3 / 2;
   object-fit: cover;
+}
+
+video::-webkit-media-controls-enclosure {
   border-radius: 6px;
 }
 
