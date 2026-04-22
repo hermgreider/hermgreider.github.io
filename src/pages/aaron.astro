@@ -1,0 +1,218 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import "../styles/home.css";
+---
+
+<BaseLayout title="Aaron Greider — Portfolio">
+
+  <main class="below-fold">
+
+    <section class="project-detail bio-section">
+      <div class="project-media headshot-container">
+        <img src="/images/bio_aaron.jpg" alt="Aaron Greider" class="headshot" />
+      </div>
+      <div class="project-text">
+        <h1>Aaron Greider</h1>
+        <div class="cv-summary">
+          <p><strong>Graphic Designer & Front-End Developer</strong></p>
+          <p>
+            Designer at <strong>Jungle Jim’s International Market</strong> specializing in the intersection of communication design and web usability.
+          </p>
+          <ul class="cv-details">
+            <li><strong>Education:</strong> BS Communication Design, UC DAAP (2022)</li>
+            <li><strong>Expertise:</strong> Large Display Installations, Event Promotion, Web Apps</li>
+            <li><strong>Community:</strong> Eagle Scout, Native Plant Enthusiast, Cincinnati Nature Center Volunteer</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="project-detail">
+      <div class="project-text">
+        <h2>Pickle Wars</h2>
+        <p>A large bit of my work at Jungle Jim’s has consisted of festival promotion and design – but it wasn’t until the
+            then brand new festival, Pickle Wars, was tossed on my lap that I was able to explore creating an
+            experiential system that was both accessible to vistors while having overall goofy and lighthearted atmostphere.
+        </p>
+
+        <p>
+            From a 10 foot Pickle Godzilla to 12 inch gold wrestling belts, this was a chance to really get wacky with it and
+            have a ton of fun with the festival experience.
+        </p>
+      </div>
+
+      <div class="project-media gallery-grid">
+        <img src="/images/picklewars/DSC01994.jpg" alt="Pickle Wars 1">
+        <img src="/images/picklewars/DSC01776.jpg" alt="Pickle Wars 2" />
+        <img src="/images/picklewars/DSC01761.jpg" alt="Pickle Wars 3" />
+        <img src="/images/picklewars/DSC02001.jpg" alt="Pickle Wars 4" />
+        <img src="/images/picklewars/DSC02425.jpg" alt="Pickle Wars 5" />
+        <img src="/images/picklewars/IMG_1304.jpg" alt="Pickle Wars 6" />
+        <img src="/images/picklewars/IMG_1334.jpg" alt="Pickle Wars 7" />
+        <img src="/images/picklewars/DSC02086.jpg" alt="Pickle Wars 8" />
+
+      </div>
+    </section>
+
+    <section class="project-detail">
+      <div class="project-text">
+        <h2>Nepal Mural</h2>
+        <p>
+            The largest thing I ever installed at Jungle Jim’s was the entryway to a new 2000 sq ft addition to the store. The
+            mural
+            depicts the <b>Pashupatinath Temple in Kathmandu</b> with simple linework, vibrant colors, and dense texturing.
+            While
+            we
+            didn’t have the space to make it life sized, the mural still stands at about 30 feet tall.
+        </p>
+      </div>
+      <div class="project-media gallery-grid">
+        <img src="/images/nepal/unnamed.jpg" alt="Nepal 1">
+        <img src="/images/nepal/unnamed.png" alt="Nepal 2">
+        </div>
+
+      <div class="project-video">
+        <div class="video-wrapper">
+          <iframe 
+            src="https://www.youtube.com/embed/Ztpuk1Gh1qc" 
+            title="Nepal Mural Video"
+            allowfullscreen>
+          </iframe>
+        </div>
+      </div>
+    </section>
+
+    <section class="project-detail">
+      <div class="project-text">
+        <h2>Africa Hanging Display</h2>
+        <p>
+            Jungle Jim (the man himself) had some spare tusks laying around that he wanted used for something, so I
+            designed a larger than life department sign for the recently expanded Africa section in both stores. Below 
+            are a couple of assets involved in design the display and mocking it up.
+        </p>
+      </div>
+      <div class="project-media gallery-grid">
+        <img src="./images/africa/mockup_03.jpg" alt="Africa Display 1">
+        <img src="./images/africa/SCHEMATIC-1.png" alt="Africa Display 2">
+        <img src="./images/africa/artwork-pop_02.jpg" alt="Africa Display 3">
+      </div>
+    </section>
+
+    <section class="project-detail">
+      <div class="project-text">
+        <h2>Junglejims.com</h2>
+        <p>
+            In addition to graphic design, I’ve been a large part in bringing the usability of <a
+            href="http://junglejims.com">junglejims.com</a> into the
+            modern era by making our databases searchable and accessible on the web! I’ve built search apps for browsing our
+            <a href="https://junglejims.com/item-search/">general inventory</a>, <a
+            href="https://junglejims.com/popular-seafood-items/">
+            seafood selection
+            </a>, <a href="https://junglejims.com/beerwinedeals/">discounted beer & wine</a>, and the high-end <a
+            href="https://junglejims.com/wine-cellar-fairfield/">
+            Boniminio Wine Cellar.
+            </a>
+        </p>
+      </div>
+    </section>
+
+  </main>
+</BaseLayout>
+
+<style is:global>
+  /* Use is:global to override the flex alignment of .project-detail for this specific section */
+  
+  /* Select the first project-detail (the bio section) */
+  .below-fold > section.project-detail:first-of-type {
+    align-items: flex-start; /* Aligns both text and image to the top */
+    padding-top: 2rem;       /* Reduced padding at the top of the page */
+  }
+
+  /* Target the container for Aaron's image */
+  .headshot-container {
+    display: flex;
+    justify-content: flex-start; /* Align image to the left of its container */
+    margin-top: 1rem;            /* Slight gap from the very top border */
+    flex: 0 0 auto;              /* Prevents the image container from growing/shrinking weirdly */
+  }
+  
+  /* The actual image constraints */
+  .headshot {
+    width: 150px !important;     /* Much smaller diameter (reduced from 250px) */
+    height: 150px !important;    /* Must match width for the circle shape */
+    object-fit: cover;
+    border-radius: 50%;         /* Maintains the circular headshot */
+    border: 3px solid rgba(255, 255, 255, 0.1); /* Subtle border */
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);      /* Adds some depth */
+  }
+
+  /* Ensure the text block stays readable and aligned */
+  .below-fold > section.project-detail:first-of-type .project-text {
+    flex: 1; /* Allows text to take available space */
+    padding-right: 2rem; /* Gap between text and image */
+  }
+
+  /* Responsive adjustment for mobile screens */
+  @media (max-width: 768px) {
+    .below-fold > section.project-detail:first-of-type {
+      flex-direction: column-reverse; /* Stacks image above text on mobile */
+      align-items: center;            /* Center aligns elements on mobile */
+      text-align: center;
+    }
+
+    .headshot-container {
+      justify-content: center;
+      margin-top: 0;
+      margin-bottom: 1rem; /* Gap between image and text when stacked */
+    }
+
+    .cv-details {
+      display: inline-block; /* Helps center the list on mobile */
+      text-align: left;
+    }
+  }
+
+  /* Keep the rest of the standardized gallery/video styles you had */
+  .cv-summary p {
+    margin-bottom: 0.75rem;
+  }
+
+  .cv-details {
+    list-style: none;
+    padding: 0;
+    margin-top: 1.5rem;
+  }
+
+  .cv-details li {
+    margin-bottom: 0.5rem;
+    font-size: 0.95rem;
+    color: #ccc;
+  }
+
+  .gallery-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+
+  .gallery-grid img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+  }
+
+  .video-wrapper {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+  }
+
+  .video-wrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+  }
+</style>
